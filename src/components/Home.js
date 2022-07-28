@@ -23,6 +23,7 @@ function Home() {
 
   return (
     <div className="home">
+      <h3>Refresh page for new quote!!</h3>
       <p>{!quotes ? "Loading..." : quotes[rand]?.content}</p>
       <h4>{!quotes ? "Loading..." : quotes[rand]?.writer}</h4>
       <CreateQuote quotes={quotes} />
