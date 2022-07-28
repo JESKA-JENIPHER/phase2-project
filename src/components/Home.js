@@ -4,15 +4,9 @@ import CreateQuote from "./CreateQuote";
 function Home() {
   const [quotes, setQuotes] = useState([]);
 
-// function to fetch quotes
+ 
 
-// const fetchQuotes = async () => {
-// const response = await fetch('http://localhost/8000/quotes')
-// let data = await response.json()
-//   setQuotes(data)
-// };
-
-// function to fetch quotes
+  // function to fetch quotes
   
   const getQuotes = () => {
     fetch("http://localhost:8000/quotes")
@@ -27,28 +21,29 @@ function Home() {
   //create a variable to randomize.
   let rand = Math.floor(Math.random() * 4);
 
-  //function to handleClick
-  function handleClick(e) {
-    return (
-      <div>
-        <p>{!quotes ? "Loading..." : quotes[rand]?.content}</p>
-        <h4>{!quotes ? "Loading..." : quotes[rand]?.writer}</h4>
-      </div>
-    );
-  }
-
   return (
     <div className="home">
-
-      {/* <p>{!quotes ? "Loading..." : quotes[rand]?.content}</p>
-      <h4>{!quotes ? "Loading..." : quotes[rand]?.writer}</h4> */}
-
-      <button onClick={handleClick} className="button">
-        New quote
-      </button>
+      <p>{!quotes ? "Loading..." : quotes[rand]?.content}</p>
+      <h4>{!quotes ? "Loading..." : quotes[rand]?.writer}</h4>
       <CreateQuote quotes={quotes} />
     </div>
   );
 };
 
 export default Home;
+
+
+
+
+
+
+
+
+
+ // function to fetch quotes
+
+  // const fetchQuotes = async () => {
+  // const response = await fetch('http://localhost/8000/quotes')
+  // let data = await response.json()
+  //   setQuotes(data)
+  // };
