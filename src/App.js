@@ -17,7 +17,6 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-      {/* <CreateQuote quotes={quotes} /> */}
     </>
   );
 }

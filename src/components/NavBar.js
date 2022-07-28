@@ -1,4 +1,3 @@
-
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
@@ -8,10 +7,6 @@ const NavBar = () => {
     <div className="navigation">
       <section className="header">
         <nav>
-          {/* <header>
-            <span className="animkingdom">Random</span>
-            <span className="animkingdom">Quotes</span>
-          </header> */}
           <div className="moveEnd">
             <ul>
               <NavLink to="/" exact="true">
@@ -20,9 +15,6 @@ const NavBar = () => {
               <NavLink to="/about" exact="true">
                 About
               </NavLink>
-              {/* <NavLink to="/NewBlog" exact="true">
-                New Blog
-              </NavLink> */}
               <NavLink to="/contact" exact="true">
                 contact
               </NavLink>
