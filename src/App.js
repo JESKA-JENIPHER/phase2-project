@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contacts";
 import NavBar from "./components/NavBar.js";
-import CreateQuote from "./components/CreateQuote";
+
 
 function App() {
   return (
