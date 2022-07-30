@@ -5,9 +5,7 @@ function CreateQuote() {
   const [writer, setWriter] = useState("");
 
 
-  // function refresh() {
-  //   window.location.reload()
-  // }
+ 
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -22,6 +20,7 @@ function CreateQuote() {
     }).then((response) => {
       
       console.log('POST successful');
+      //line below handles refresh
       window.setInterval(window.location.reload(), 10000);
     });
   }
