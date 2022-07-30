@@ -4,6 +4,11 @@ function CreateQuote() {
   const [content, setContent] = useState("");
   const [writer, setWriter] = useState("");
 
+
+  // function refresh() {
+  //   window.location.reload()
+  // }
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -15,7 +20,9 @@ function CreateQuote() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(quote),
     }).then((response) => {
+      
       console.log('POST successful');
+      window.setInterval(window.location.reload(), 10000);
     });
   }
 
