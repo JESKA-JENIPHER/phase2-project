@@ -1,0 +1,39 @@
+{
+  "quotes": [
+    {
+      "id": 1,
+      "content": "Crocs are shoes and crocs are sounds ",
+      "writer": "Mario Abdul"
+    },
+    {
+      "id": 2,
+      "content": " Make choices and dont look back.",
+      "writer": "Jason Bull"
+    },
+    {
+      "id": 3,
+      "content": "Cars are the iiiisshhh ",
+      "writer": "Mike Ross"
+    },
+    {
+      "content": "Zirkze is a legend",
+      "writer": "Jenny Jessy",
+      "id": 4
+    },
+    {
+      "content": "this is a POST test",
+      "writer": "J.J",
+      "id": 5
+    },
+    {
+      "content": "this is a POST test",
+      "writer": "J.J",
+      "id": 6
+    },
+    {
+      "content": "   bbbb",
+      "writer": "bbb",
+      "id": 7
+    }
+  ]
+}

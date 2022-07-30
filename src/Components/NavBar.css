@@ -1,0 +1,41 @@
+.navigation {
+  position: relative;
+  display: flex;
+  margin: 0;
+  background:#f1356d;
+  color: white;
+  height: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+nav {
+  position: relative;
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+.navigation a {
+  position: relative;
+  color: #000;
+  margin-left: -50px;
+  text-decoration: none;
+  margin-right: 100px;
+  /* justify-content: space-evenly; */
+}
+
+.navigation a::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 3px;
+  width: 25%;
+  top: 17px;
+  left: 25%;
+  transform: scaleX(50%);
+  transition: 0.7s;
+}
+
+.navigation a:hover::before {
+  width: 100%;
+}
